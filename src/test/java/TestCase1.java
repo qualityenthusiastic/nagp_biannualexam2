@@ -7,7 +7,7 @@ public class TestCase1 extends BaseClass {
         System.out.println("This is Test Case 1");
     }
 
-    //testingggdsfsfsdf
+    //testin
     @Test
     public void Testcase2(){
         System.out.println("This is Test Case 2");
