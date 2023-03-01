@@ -16,7 +16,7 @@ pipeline{
 		{
 			steps
 			{
-				bat "mvn install"
+				bat "mvn clean"
 			}
 		}
 		stage ('Unit Testing')
@@ -30,7 +30,7 @@ pipeline{
 		{
 			steps
 			{
-				withSonarQubeEnv(installationName: 'rb-SonarToken')
+				withSonarQubeEnv(installationName: 'rb-sonarJenkins')
 				{
 					bat "mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.7.0.1746:sonar"
 				}
