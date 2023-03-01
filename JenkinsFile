@@ -30,7 +30,7 @@ pipeline{
 		{
 			steps
 			{
-				withSonarQubeEnv(installationName: 'sonar-token-rb')
+				withSonarQubeEnv(installationName: 'rb-SonarToken')
 				{
 					bat "mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.7.0.1746:sonar"
 				}
